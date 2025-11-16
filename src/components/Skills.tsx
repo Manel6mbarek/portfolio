@@ -88,12 +88,19 @@ export default function Skills() {
         <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-cyan-300 mx-auto rounded-full mb-12" />
 
         {/* Scroll centré */}
-        <div className="overflow-hidden relative max-w-4xl mx-auto">
-          <div className="flex animate-scroll gap-6 justify-center">
+         {/* Scroll centré avec effet de fondu */}
+        <div className="overflow-hidden relative max-w-6xl mx-auto">
+          {/* Gradient de fondu gauche */}
+          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-gray-900 to-transparent z-10 pointer-events-none" />
+          
+          {/* Gradient de fondu droit */}
+          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-gray-900 to-transparent z-10 pointer-events-none" />
+          
+          <div className="flex animate-scroll gap-8 py-4">
             {skillCategories.concat(skillCategories).map((category, idx) => (
               <div
                 key={idx}
-                className={`min-w-[250px] p-4 rounded-xl border-2 flex-shrink-0 bg-gradient-to-br ${cardColors[idx % cardColors.length]} border-white/30`}
+                className={`min-w-[280px] p-6 rounded-xl border-2 flex-shrink-0 bg-gradient-to-br ${cardColors[idx % cardColors.length]} border-white/30 shadow-xl hover:scale-105 transition-transform duration-300`}
               >
                 <h3 className="text-xl font-bold text-white mb-4 text-center">
                   {category.category}
@@ -102,12 +109,12 @@ export default function Skills() {
                   {category.skills.map((skill, index) => (
                     <div key={index}>
                       <div className="flex justify-between mb-1">
-                        <span className="text-white/90 text-sm">{skill.name}</span>
+                        <span className="text-white/90 text-sm font-medium">{skill.name}</span>
                         <span className="text-white font-semibold text-sm">{skill.level}%</span>
                       </div>
                       <div className="h-2 bg-white/20 rounded-full overflow-hidden">
                         <div
-                          className="h-full bg-gradient-to-r from-white/70 to-white/90 rounded-full"
+                          className="h-full bg-gradient-to-r from-white/70 to-white/90 rounded-full transition-all duration-500"
                           style={{ width: `${skill.level}%` }}
                         />
                       </div>
