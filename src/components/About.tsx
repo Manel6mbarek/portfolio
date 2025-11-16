@@ -1,3 +1,4 @@
+import profil from "../assets/images/rr.png";
 export default function About() {
   const keywords = ["Développement", "Design", "Innovation", "problème-solving", "clean code"];
 
@@ -45,7 +46,7 @@ export default function About() {
             <div className="relative">
               <div className="w-80 h-80 md:w-96 md:h-96">
                 <img
-                  src="/images/rr.png"
+                  src={profil}
                   alt="Photo de profil"
                   className="w-full h-full object-cover rounded-full 
                              shadow-[0_0_40px_rgba(59,130,246,0.5)] 

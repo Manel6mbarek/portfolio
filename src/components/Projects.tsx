@@ -1,11 +1,17 @@
 import { ExternalLink, Github } from 'lucide-react';
+import yala from "../assets/images/yalashop.png";
+import plugin from "../assets/images/plugin.png";
+import surveillance from "../assets/images/surveillance.png";
+import find from "../assets/images/findfreinds.jpg";
+import rando from "../assets/images/rendonne.png";
+import access from "../assets/images/acesstrack.jpg";
 
 export default function Projects() {
   const projects = [
        {
       title: 'Site e-commerce YallaShop', 
       description:'Système e-commerce avec gestion produits, commandes et factures PDF, doté d’une interface responsive et d’une authentification JWT sécurisée.',
-      image: '/images/yalashop.png',
+      image: yala,
       tags: ['React', 'Springboot','MySQL', 'JWT'],
       github: 'https://github.com/Manel6mbarek/yalashop',
       demo: 'https://demo.com',
@@ -13,7 +19,7 @@ export default function Projects() {
      {
       title: 'plugin WordPress IA',
       description: 'Création d’un plugin WordPress intégrant l’IA pour générer du contenu SEO, et développement de formulaires interactifs  à des APIs d’IA.',
-      image: '/images/plugin.png',
+      image: plugin,
       tags: ['WordPress', 'PHP', 'Python', 'IA'],
       github: 'https://github.com/Manel6mbarek/plugin-personnalis-pour-WordPress-qui-facilite-la-g-n-ration-de-contenu-de-votre-site-web.',
       demo: 'https://demo.com',
@@ -21,7 +27,7 @@ export default function Projects() {
       {
       title: 'Plateforme de Surveillance des Examens',
       description: 'Solution d’automatisation des surveillances d’examens : algorithme d’IA pour une distribution optimale des enseignants et génération dynamique de calendriers adaptés.',
-      image: '/images/surveillance.png',
+      image: surveillance,
       tags: ['React', 'MongoDB', 'Node.js', 'AI'],
       github: 'https://github.com/Manel6mbarek/Surveillance-Examen',
       demo: 'https://demo.com',
@@ -29,7 +35,7 @@ export default function Projects() {
     {
       title: 'App Mobile FindMe',
       description: 'FindMe : suivez vos contacts en temps réel, communiquez avec eux et recevez automatiquement leur position à la demande.',
-      image: '/images/findfreinds.jpg',
+      image: find,
       tags: ['java', 'Android Studio', 'SQLite'],
       github: 'https://github.com/Manel6mbarek/App_Mobile_FindMe',
       demo: 'https://demo.com',
@@ -38,7 +44,7 @@ export default function Projects() {
       
       title: 'Site web randonnée',
       description: 'Plateforme web dédiée aux passionnés de randonnée, offrant des itinéraires, des conseils et une communauté active.',
-      image: '/images/rendonne.png',
+      image: rando,
       tags: ['PHP', 'MySQL', 'Symfony'],
       github: 'https://github.com/Manel6mbarek/rendoneeDev',
       demo: 'https://demo.com',
@@ -48,7 +54,7 @@ export default function Projects() {
     {
       title: 'App Mobile Access Track',
       description: 'Application mobile permettant de localiser les personnes handicapées, de visualiser en temps réel leur environnement via des images, et d’envoyer automatiquement des alertes en cas de danger.',
-      image: '/images/acesstrack.jpg',
+      image: access,
       tags: ['Dart', 'Flutter', 'Firebase'],
       github: 'https://github.com',
       demo: 'https://demo.com',
